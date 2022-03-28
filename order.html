@@ -3,69 +3,99 @@
 <!--add html element-->
 <html>
 <!--add head element with title element (contents Order a Melongram!)-->
-   <head>
+    <head>
        <!--create h1 element-->
        <h1><title> Order a Melongram! </title></h1>
+    </head>
        <!--add a body element-->
-       <body>
-           <p>
+    <body>
+        <p>
+        There's no better way to show a loved one you care than with a Melongram.
+        </p>
+        <p>
+        Each Melongram comes with a custom message printed on high-quality cardstock
+        and your choice of a hand-picked, premium melon.
+        </p>
+        <!--contents go here-->
+    </body>
+    <head>
+        <!--create h2 element-->
+        <h2><title> Melon Options </title></h2>
+    </head>
+    <body>
+        <!--add a body element-->
+        <p>
+        Choose from one of these melons:
+        </p>
+        <!--add a table element-->
+        <table>
+            <!--each row has tr element-->
+            <!--Choose from one of these melons:
 
-           </p>
-           <p>
-
-           </p>
-           <!--contents go here-->
-       </body>
-       <!--create h2 element-->
-       <h2><title> Melon Options </title></h2>
-       <!--add a body element-->
-       <p>
-
-       </p>
-       <!--add a table element-->
-       <table>
-           <!--each row has tr element-->
-           <tr> 
+            Watermelon $1,200.00
+            Canteloupe $400.00
+            Honeydew $1,750.00-->
+            <tr> 
                 <!--each row has two td elements: name of melon, its price-->
-            <td> Name </td>
-            <td> Price </td>
-           </tr>
-       </table>
-       <!--create h2 element with title 'Order Form'-->
-       <h2><title> Order Form </title></h2>
-       <!--create a form containing text input for user's name for the name attribute-->
-        <input type="text" name="name">
+            <td> Watermelon </td>
+            <td> $1,200.00 </td>
+            </tr>
+            <tr>
+            <td> Cantaloupe </td>
+            <td> $400.00 </td>
+            </tr>
+            <tr>
+            <td> Honeydew </td>
+            <td> $1,750.00 </td>
+            </tr>
+        </table>
+    </body>
+    <head>
+        <!--create h2 element with title 'Order Form'-->
+        <h2><title> Order Form </title></h2>
+    </head>
+    <form>
+        <!--create a form containing text input for user's name for the name attribute-->
+        Your name <input type="text" name="name">
+    </form>
+    <form>
         <!--create a text input for recipient's name for the name attribute-->
-        <input type="text" name="recipient">
+        Who are we sending this to? <input type="text" name="recipient"> 
         <!--create a dropdown menu for melons where name attribute is melon-->
-        <select name="melon">
+    </form>
+    <form>
+        <label for="melon">Choose a melon:</label>
+        <select name="melon" id="melon-selct">
             <!--put each melon as an option element, value = lowercase of melon name, (watermelon,cantaloupe, honeydew)-->
             <option value="watermelon">Watermelon</option>
             <option value="cantaloupe">Cantaloupe</option>
             <option value="honeydew">Honeydew</option>
         </select>
+    </form>
+    <form>
+        When should we deliver?
         <!--create a radio button for shipping options; name = time; value = am, pm, any; output = morning, evening, any time-->
-        <input type="radio" name="time" value="am" id="morning">Morning
-        <input type="radio" name="time" value="pm" id="evening">Evening
-        <input type="radio" name="time" value="any" id="any time">Any time
+        <input type="radio" name="time" value="am" id="morning">
+        <label for="morning">Morning</label>
+        <input type="radio" name="time" value="pm" id="evening">
+        <label for="evening">Evening</label>
+        <input type="radio" name="time" value="any" id="any-time">
+        <label for="any-time">Any Time</label>
+    </form>
+    <form>
         <!--create textarea with name = message-->
         <textarea name="message" id="message"></textarea>
+    </form>
+    <form>
         <!--create a checkbox with name = subscribe, value = yes-->
         <input type="checkbox" name="subscribe" value="yes">
+    </form>
+    <form>
         <!--create a submit button-->
         <input type="submit">
+    </form>
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </head> 
         
 
 
