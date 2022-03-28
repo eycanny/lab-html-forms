@@ -4,10 +4,10 @@
 <html>
 <!--add head element with title element (contents Order a Melongram!)-->
     <head>
-       <!--create h1 element-->
-       <h1><title> Order a Melongram! </title></h1>
+        <!--create h1 element-->
+        <h1><title> Order a Melongram! </title></h1>
     </head>
-       <!--add a body element-->
+        <!--add a body element-->
     <body>
         <p>
         There's no better way to show a loved one you care than with a Melongram.
@@ -30,13 +30,8 @@
         <!--add a table element-->
         <table>
             <!--each row has tr element-->
-            <!--Choose from one of these melons:
-
-            Watermelon $1,200.00
-            Canteloupe $400.00
-            Honeydew $1,750.00-->
             <tr> 
-                <!--each row has two td elements: name of melon, its price-->
+            <!--each row has two td elements: name of melon, its price-->
             <td> Watermelon </td>
             <td> $1,200.00 </td>
             </tr>
@@ -65,28 +60,34 @@
     </form>
     <form>
         <label for="melon">Choose a melon:</label>
-        <select name="melon" id="melon-selct">
+
+        <select name="melon" id="melon">
             <!--put each melon as an option element, value = lowercase of melon name, (watermelon,cantaloupe, honeydew)-->
             <option value="watermelon">Watermelon</option>
             <option value="cantaloupe">Cantaloupe</option>
+            <option value="honeydew">Honeydew</option>
             <option value="honeydew">Honeydew</option>
         </select>
     </form>
     <form>
         When should we deliver?
-        <!--create a radio button for shipping options; name = time; value = am, pm, any; output = morning, evening, any time-->
+
         <input type="radio" name="time" value="am" id="morning">
         <label for="morning">Morning</label>
+
         <input type="radio" name="time" value="pm" id="evening">
         <label for="evening">Evening</label>
+
         <input type="radio" name="time" value="any" id="any-time">
         <label for="any-time">Any Time</label>
     </form>
     <form>
+        <label for="message">Enter your message:</label>
         <!--create textarea with name = message-->
         <textarea name="message" id="message"></textarea>
     </form>
     <form>
+        <label for="subscribe">Subscribe to our newsletter</label>
         <!--create a checkbox with name = subscribe, value = yes-->
         <input type="checkbox" name="subscribe" value="yes">
     </form>
@@ -94,13 +95,6 @@
         <!--create a submit button-->
         <input type="submit">
     </form>
-    
-    
-        
-
-
-
-
 </html>
 
 
